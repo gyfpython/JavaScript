@@ -15,15 +15,15 @@ let sentence1: string = "Hello, my name is " + name + ".\n\n" +
 // array
 let list: number[] = [1, 2, 3];
 let list1: Array<number> = [1, 2, 3];
-// Tuple 元组类型允许表示一个已知元素数量和类型的数组，各元素的类型不必相同
+// Tuple 元组类型允许表示一个已知元素数量和类型的数组，各元素的类型不必相同t
 let x: [string, number];
 x = ['la', 2];
-let x0 = x[0].substr(0);
-let x1 = x[1];
+let x0: string = x[0].substr(0);
+let x1: number = x[1];
 // enum 枚举
 enum Color {Red,Green,Yellow};
-let c = Color.Green;
-let colorname = Color[0];
+let c: Color = Color.Green;
+let colorname: string = Color[0];
 // any
 let notSure: any = 4;
 notSure = "maybe a string instead";
@@ -34,9 +34,9 @@ notSure1.toFixed(); // okay, toFixed exists (but the compiler doesn't check)
 let prettySure: Object = 4;
 // prettySure.toFixed(); Error: Property 'toFixed' doesn't exist on type 'Object'.
 let list2: any[] = [1, true, "free"];
-list[1] = 100;
+list2[1] = 100;
 // Void
-function warnmsg() {
+function warnmsg(): void {
     console.log('This is a warning meesage');
 }
 let unusable = undefined; //Value: undefined or null
