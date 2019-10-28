@@ -34,6 +34,8 @@ interface Point {
     readonly y: number;
 }
 let p1: Point = {x: 10, y: 20}
+// readonly vs const
+// 最简单判断该用readonly还是const的方法是看要把它做为变量使用还是做为一个属性。 做为变量使用的话用 const，若做为属性则使用readonly。
 
 // 函数类型 接口定义函数类型：包含参数名称及类型，返回值类型
 interface SearchFunc {
