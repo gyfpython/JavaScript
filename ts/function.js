@@ -1,3 +1,4 @@
+"use strict";
 // 可选参数和默认参数
 function buildName(firstName, lastName) {
     return firstName + " " + lastName;

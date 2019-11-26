@@ -1,3 +1,4 @@
+"use strict";
 // let declare
 // 当用let声明一个变量，它使用的是词法作用域或块作用域。 不同于使用 var声明的变量那样可以在包含它们的函数外访问，块作用域变量在包含它们的块或for循环之外是不能访问的。
 function f(input) {
@@ -57,7 +58,7 @@ function theCityThatAlwaysSleeps() {
 var numLivesForCat = 9;
 var kitty = {
     name: "Aurora",
-    numLives: numLivesForCat
+    numLives: numLivesForCat,
 };
 // Error
 // kitty = {
